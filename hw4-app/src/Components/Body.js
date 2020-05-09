@@ -3,6 +3,7 @@ import Home from './Home'
 import Images from './Images'
 import Videos from './Videos'
 import Projects from './Projects'
+import GuestBook from './GuestBook'
 
 
 export class Body extends Component {
@@ -14,8 +15,10 @@ export class Body extends Component {
       return <Images/>;
     }else if(activeTab == 3){
       return <Videos/>;
-    }else{
+    }else if(activeTab == 4){
       return <Projects/>;
+    }else{
+      return <GuestBook/>;
     }
   }
   render() {
